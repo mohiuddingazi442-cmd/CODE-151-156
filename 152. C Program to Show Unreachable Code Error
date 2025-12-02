@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    printf("This will be printed.\n");
+
+    return 0;  // Program ends here
+
+    // Unreachable code example
+    printf("This will NEVER be printed!\n");  // Compiler may warn about this
+
+    // Another example using exit()
+    exit(0);
+    printf("Also unreachable due to exit.\n"); // Unreachable
+
+    return 0;
+}
