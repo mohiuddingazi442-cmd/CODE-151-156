@@ -1,0 +1,20 @@
+#include <graphics.h>
+#include <conio.h>
+
+int main() {
+    int gd = DETECT, gm;  // Graphics driver and mode
+
+    initgraph(&gd, &gm, ""); // Initialize graphics mode
+
+    // Draw a circle
+    int x = 250, y = 200, radius = 100;
+    circle(x, y, radius);  // circle(center_x, center_y, radius)
+
+    // Display message
+    outtextxy(x - 50, y + radius + 20, "This is a circle");
+
+    getch(); // Wait for a key press
+    closegraph(); // Close graphics mode
+
+    return 0;
+}
