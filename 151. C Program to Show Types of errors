@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+// Function declared but not defined to show link-time error
+// void undefinedFunction(); // Uncomment to cause link-time error
+
+int main() {
+    // 1. Compile-time error example
+    // Uncomment the following line to see a compile-time error
+    // printf("Hello World"  // Missing closing parenthesis
+
+    // 2. Runtime error example
+    int a = 10, b = 0;
+    // Uncomment the following line to see a runtime error (division by zero)
+    // int c = a / b;
+    // printf("Result: %d\n", c);
+
+    // 3. Link-time error example
+    // Uncomment the following line to see a link-time error
+    // undefinedFunction();
+
+    printf("Error examples are commented to prevent program crash.\n");
+    printf("Uncomment one at a time to see each type of error.\n");
+
+    return 0;
+}
